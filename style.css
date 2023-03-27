@@ -1,0 +1,10 @@
+h1{
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+a{
+  text-decoration: none;
+  color: brown;
+}
