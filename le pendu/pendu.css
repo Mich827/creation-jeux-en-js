@@ -1,0 +1,28 @@
+.btn{
+width: 30px;
+height: 30px;
+}
+
+main{
+  max-width: 500px;
+  margin: auto;
+}
+table{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+
+#keyBoard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+#keyBoard div{
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border: solid 1px gray;
+  margin: 2px;
+}
