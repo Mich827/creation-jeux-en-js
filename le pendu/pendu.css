@@ -2,6 +2,24 @@
 width: 30px;
 height: 30px;
 }
+h1{
+  background: linear-gradient( 90deg, brown, yellow, brown);
+  border: solid 2px gray;
+  box-shadow: 2px 2px 6px black;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+h3{
+  background: sandybrown;
+  text-align: center;
+  border-radius: 10px;
+  border: solid;
+  box-shadow: 2px 2px 5px black;
+  color: bisque;
+  text-shadow: 2px 2px 5px black;
+
+}
 
 main{
   max-width: 500px;
@@ -25,4 +43,38 @@ table{
   text-align: center;
   border: solid 1px gray;
   margin: 2px;
+}
+@keyframes fifi {
+  100%{
+    transform: scale(0.1 , 0.1);
+  }
+  
+}
+#winner{
+  visibility: hidden;
+  text-align: center;
+}
+
+#imagePendu{
+  background-image: url(image/spritePendu.jpg);
+  width: 130px;
+  height: 140px;
+  margin: auto;
+
+}
+
+#imagePendu.etat0{
+  background-position: -20px -55px;
+}
+#imagePendu.etat1{
+  background-position: -220px -55px;
+}
+#imagePendu.etat2{
+  background-position: -410px -55px;
+}
+#imagePendu.etat3{
+  background-position: -20px -250px;
+}
+#imagePendu.etat4{
+  background-position: -220px -250px;
 }
