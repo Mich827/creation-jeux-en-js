@@ -1,0 +1,71 @@
+.containerAcceuil{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #01161e;
+  border: solid 5px rgb(238, 215, 10);
+  
+  
+}
+.containerAcceuil a{
+  color:rgb(206, 215, 209);
+  
+}
+h1{
+  color:rgb(184, 107, 8);
+  text-shadow: 2px 2px 4px black;
+}
+.acceuilTitle{
+  color:brown;
+  font-size: 3rem;
+  font-family: papyrus;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px;
+
+}
+.justePrix{
+  background-image: url('./lagaff.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 2px 2px 3px gold;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.pendu{
+  background-image: url('./pendu.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 2px 2px 3px gold;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.memory{
+  background-image: url('./memory.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 2px 2px 2px gold;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: goldenrod;
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+}

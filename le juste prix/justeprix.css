@@ -1,3 +1,8 @@
+
+body{
+  background-color: darkslategrey;
+}
+
 .presentation{
   display: flex;
   flex-direction: column;
@@ -19,4 +24,17 @@ button{
   100%{
     transform: rotate(360deg);
   }
+}
+
+#btnReturn{
+  background-color: darkcyan;
+  
+}
+#btnReturn a{
+  text-decoration: none;
+  color:whitesmoke;
+}
+#checkPropalButton{
+  color:beige;
+  background-color: crimson;
 }
