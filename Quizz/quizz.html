@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Questions-Réponses</title>
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Quizz</h1>
+        <div id="question"></div>
+        <form id="answersForm">
+            <label><input type="radio" name="answer" value="a"> <span id="answerA"></span></label><br>
+            <label><input type="radio" name="answer" value="b"> <span id="answerB"></span></label><br>
+            <label><input type="radio" name="answer" value="c"> <span id="answerC"></span></label><br>
+            <button type="button" id="submitBtn">Soumettre</button>
+        </form>
+        <div id="result"></div>
+        <div id="score">Score : <span id="scoreValue">0</span></div>
+    </div>
+    <div>
+        <button id="replayButton">Replay</button>  
+    </div>
+    <button class="returnBtn"><a href="../index.html">Return</a></button>
+    <script src="quizz.js"></script>
+</body>
+</html>
+
+
+
+

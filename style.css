@@ -1,5 +1,5 @@
 .containerAcceuil{
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +13,8 @@
   
 }
 h1{
-  color:rgb(184, 107, 8);
-  text-shadow: 2px 2px 4px black;
+  color:rgb(148, 4, 4);
+  text-shadow: 2px 2px 3px goldenrod;
 }
 .acceuilTitle{
   color:brown;
@@ -22,6 +22,7 @@ h1{
   font-family: papyrus;
   font-weight: 900;
   text-shadow: 2px 2px 4px;
+  text-shadow: 1px 1px 2px white;
 
 }
 .justePrix{
@@ -60,6 +61,17 @@ h1{
   border-radius: 10px;
   padding: 20px;
 }
+.quizz{
+  background-image: url('./quizz.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 2px 2px 2px gold;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 a{
   text-decoration: none;
@@ -68,4 +80,5 @@ a{
   border: solid 1px;
   border-radius: 50%;
   padding: 5px;
+  box-shadow: 2px 2px 3px ;
 }

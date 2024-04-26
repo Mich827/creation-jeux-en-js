@@ -1,0 +1,57 @@
+body{
+  background-color: darkcyan;
+}
+.container{
+height: 50vh;
+padding: 20px;
+margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+.title{
+color:brown;
+font-size: 3rem;
+text-shadow: 2px 2px 3px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#replayButton{
+background-color: crimson;
+color: aliceblue;
+padding: 10px;
+border-radius: 10px;
+}
+.returnBtn{
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.returnBtn a{
+  text-decoration: none;
+  color:aliceblue;
+}
+#submitBtn{
+  background-color: dodgerblue;
+  color: aliceblue;
+}
+
+#question{
+  font-size: 2rem;
+  color:bisque;
+  text-shadow: 2px 2px 3px black;
+}
+#answersForm{
+font-size: 2rem;
+}
+#submitBtn{
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 3px black;
+}
+#score{
+  font-size: 2rem;
+  color:bisque
+}
