@@ -1,84 +1,100 @@
-.containerAcceuil{
-  height: 130vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.containerAcceuil {
+  height: 300vh; /* Utilisez 130vh pour une hauteur plus grande */
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #01161e;
-  border: solid 5px rgb(238, 215, 10);
-  
-  
+  background-color: #0a465e;
+  border: solid 5px rgb(13, 12, 2);
 }
-.containerAcceuil a{
-  color:rgb(206, 215, 209);
-  
-}
-h1{
-  color:rgb(148, 4, 4);
-  text-shadow: 2px 2px 3px goldenrod;
-}
-.acceuilTitle{
-  color:brown;
-  font-size: 3rem;
-  font-family: papyrus;
-  font-weight: 900;
-  text-shadow: 2px 2px 4px;
-  text-shadow: 1px 1px 2px white;
 
+.jeux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Espace après le titre */
 }
-.justePrix{
+
+.justePrix, .pendu, .memory, .quizz, .snake {
+  background-size: cover; /* Assure que l'image occupe tout l'espace */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 40vw;
+  box-shadow: 2px 2px 3px rgb(243, 245, 245);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex; /* Pour centrer verticalement le contenu */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*.justePrix {
   background-image: url('./lagaff.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  width: 50vw;
-  box-shadow: 2px 2px 3px gold;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  
 }
 
-.pendu{
+.pendu {
   background-image: url('./pendu.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  width: 50vw;
-  box-shadow: 2px 2px 3px gold;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px;
 }
 
-.memory{
+.memory {
   background-image: url('./memory.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  width: 50vw;
-  box-shadow: 2px 2px 2px gold;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 20px;
-}
-.quizz{
-  background-image: url('./quizz.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-  width: 50vw;
-  box-shadow: 2px 2px 2px gold;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 20px;
 }
 
-a{
+.quizz {
+  background-image: url('./quizz.jpeg');
+}
+.snake {
+  background-image: url('./snake.png');
+}*/
+
+.containerAcceuil a {
   text-decoration: none;
   font-size: 2rem;
   background-color: goldenrod;
   border: solid 1px;
   border-radius: 50%;
   padding: 5px;
-  box-shadow: 2px 2px 3px ;
+  box-shadow: 2px 2px 3px;
+  color: rgb(206, 215, 209); /* Couleur du texte */
+  transition: background-color 0.3s ease;
+}
+
+.containerAcceuil a:hover {
+  background-color: rgb(209, 179, 14); /* Changement de couleur au survol */
+}
+
+.acceuilTitle {
+  color: brown;
+  font-size: 3rem;
+  font-family: Papyrus;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px;
+  text-shadow: 1px 1px 2px white;
+}
+
+h2 {
+  color: rgb(148, 4, 4);
+  text-shadow: 2px 2px 3px goldenrod;
+}
+
+/* Pour ajouter un peu de responsivité */
+@media (max-width: 768px) {
+  .justePrix, .pendu, .memory, .quizz {
+    width: 50vw; /* Ajuste la largeur pour tablettes */
+  }
+}
+
+@media (max-width: 480px) {
+  .justePrix, .pendu, .memory, .quizz {
+    width: 80vw; /* Ajuste la largeur pour mobiles */
+  }
 }

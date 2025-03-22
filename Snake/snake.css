@@ -1,0 +1,17 @@
+.title{
+  text-align: center;
+}
+canvas{
+  border: 1px solid black;
+  background-color: bisque;
+  display: block;
+  margin: auto;
+}
+body{
+  background-image: url('../snakeback.jpg');
+}
+a{
+  color:beige;
+  text-decoration: none;
+  font-size: 2rem;
+}

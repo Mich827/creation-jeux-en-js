@@ -1,57 +1,98 @@
-body{
+body {
   background-color: darkcyan;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.container{
-height: 50vh;
-padding: 20px;
-margin: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-}
-.title{
-color:brown;
-font-size: 3rem;
-text-shadow: 2px 2px 3px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-#replayButton{
-background-color: crimson;
-color: aliceblue;
-padding: 10px;
-border-radius: 10px;
-}
-.returnBtn{
-  background-color: darkblue;
+.container {
+  height: 50vh;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1); /* Ajout d'un fond légèrement opaque */
   border-radius: 10px;
-  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+}
 
+.title {
+  color: brown;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px black;
+  animation: pulse 2s infinite; /* Ajout d'une animation pour le titre */
 }
-.returnBtn a{
-  text-decoration: none;
-  color:aliceblue;
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-#submitBtn{
+
+#question {
+  font-size: 2rem;
+  color: bisque;
+  text-shadow: 2px 2px 3px black;
+  margin-bottom: 20px; /* Ajout d'un espacement */
+}
+
+#answersForm {
+  font-size: 2rem;
+}
+
+#answersForm label {
+  margin-bottom: 10px; /* Ajout d'un espacement entre les réponses */
+}
+
+#submitBtn {
   background-color: dodgerblue;
   color: aliceblue;
-}
-
-#question{
-  font-size: 2rem;
-  color:bisque;
-  text-shadow: 2px 2px 3px black;
-}
-#answersForm{
-font-size: 2rem;
-}
-#submitBtn{
   border-radius: 20px;
   padding: 10px;
   box-shadow: 2px 2px 3px black;
+  transition: background-color 0.2s ease; /* Ajout d'une transition pour le bouton */
 }
-#score{
+
+#submitBtn:hover {
+  background-color: #1a3d5d; /* Changement de couleur au survol */
+}
+
+#score {
   font-size: 2rem;
-  color:bisque
+  color: bisque;
+  margin-top: 20px; /* Ajout d'un espacement */
+}
+
+#replayButton {
+  background-color: crimson;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease; /* Ajout d'une transition pour le bouton */
+}
+
+#replayButton:hover {
+  background-color: #8b0a1a; /* Changement de couleur au survol */
+}
+
+.returnBtn {
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.2s ease; /* Ajout d'une transition pour le bouton */
+}
+
+.returnBtn:hover {
+  background-color: #03055b; /* Changement de couleur au survol */
+}
+
+.returnBtn a {
+  text-decoration: none;
+  color: aliceblue;
 }

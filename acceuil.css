@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a465e; /* Fond sombre */
+}
+
+.container {
+  height: 100vh; /* Hauteur relative à la fenêtre */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centre verticalement */
+}
+
+.acceuilTitle {
+  color: brown;
+  font-size: 5rem;
+  font-family: Papyrus;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px white;
+}
+
+.playButton {
+  color: rgb(206, 215, 209);
+  background-color: rgb(148, 4, 4); /* Fond rouge foncé */
+  padding: 10px 20px;
+  border-radius: 10px; /* Coins arrondis */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: rgb(255, 0, 0); /* Fond rouge clair au survol */
+  color: white;
+}
+
+/* Pour ajouter un peu de dynamisme */
+.container {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

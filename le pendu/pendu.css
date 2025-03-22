@@ -5,6 +5,11 @@ body{
 width: 30px;
 height: 30px;
 }
+a{
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 2rem;
+}
 h1{
   background: linear-gradient( 90deg, brown, yellow, brown);
   border: solid 2px gray;
@@ -80,4 +85,8 @@ table{
 }
 #imagePendu.etat4{
   background-position: -220px -250px;
+}
+#beginGame{
+  background-color: bisque;
+  color: rgb(29, 118, 196);
 }

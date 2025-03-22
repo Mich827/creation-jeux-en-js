@@ -1,40 +1,85 @@
-
-body{
-  background-color: darkslategrey;
+body {
+  background-color: rgb(22, 84, 84);
+  font-family: Arial, sans-serif;
 }
 
-.presentation{
+.presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-top: 20px;
 }
-img{
+
+img {
   border-radius: 15%;
-  border: solid;
+  border: solid 2px white;
   box-shadow: 3px 3px 6px;
   margin-bottom: 5px;
 }
-button{
+
+#articleImage {
   border-radius: 15%;
-
-
-}
-@keyframes lag {
-  100%{
-    transform: rotate(360deg);
-  }
+  border: solid 2px white;
+  box-shadow: 3px 3px 6px;
+  width: 300px;
+  height: 200px;
 }
 
-#btnReturn{
+button {
+  border-radius: 15%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#btnReturn {
   background-color: darkcyan;
-  
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-#btnReturn a{
+
+#btnReturn a {
   text-decoration: none;
-  color:whitesmoke;
+  color: whitesmoke;
 }
-#checkPropalButton{
-  color:beige;
+
+#checkPropalButton {
+  color: beige;
   background-color: crimson;
+  padding: 10px 20px;
 }
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#userPropalInput {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#resultDiv {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+#compteARebour {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.divre {
+  height: 100px; /* Pour espacer le contenu */
+}
+
+

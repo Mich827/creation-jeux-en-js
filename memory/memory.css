@@ -1,18 +1,34 @@
-body{
+body {
   background-color: rgb(15, 9, 2);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.title{
+
+.title {
   text-align: center;
   font-size: 3rem;
-  color:coral;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: coral;
   text-shadow: 2px 2px 3px grey;
+  animation: pulse 2s infinite; /* Ajout d'une animation pour le titre */
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .memory-game {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
   margin: 0 auto;
+  justify-content: center; /* Pour centrer les cartes */
 }
 
 .card {
@@ -72,26 +88,65 @@ body{
 .card.matched {
   background-color: #2ecc71;
   cursor: default;
+  animation: match 1s; /* Ajout d'une animation pour les cartes matchées */
 }
-#messageWin{
-  position:absolute;
+
+@keyframes match {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#messageWin {
+  position: absolute;
   font-size: 8rem;
-  color:brown;
-  font-weight:800;
+  color: brown;
+  font-weight: 800;
   left: 50px;
   top: 300px;
   text-shadow: 2px 2px 3px black;
+  animation: win 2s infinite; /* Ajout d'une animation pour le message de victoire */
 }
+
+@keyframes win {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*button display*/
-.btn{
+.btn {
   display: flex;
   justify-content: space-around;
+  margin-top: 20px; /* Ajout d'un espacement pour les boutons */
 }
-.btn button{
+
+.btn button {
   color: white;
   background-color: darkcyan;
+  padding: 10px 20px; /* Ajout de padding pour les boutons */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Ajout d'une transition pour les boutons */
 }
-.btn a{
+
+.btn button:hover {
+  background-color: #1a3d5d; /* Changement de couleur au survol */
+}
+
+.btn a {
   color: white;
   text-decoration: none;
 }
